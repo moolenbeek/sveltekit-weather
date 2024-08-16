@@ -19,8 +19,8 @@
 		<p>{description}</p>
 		<img id="icon" src="https://openweathermap.org/img/wn/{icon}@2x.png" alt="" />
 		<div id="minMax">
-      <p id="max"><b>{max} &#8451</b></p>
-			<p id="min">{min} &#8451</p>
+      <p id="max">&#8593 <b>{max} &#8451</b></p>
+			<p id="min">&#8595 {min} &#8451</p>
 		</div>
 	{/if}
 </div>
