@@ -1,6 +1,6 @@
 <script lang="ts">
-	import CurrentTemp from "$lib/Current-temp.svelte";
+	import DailyOverview from "$lib/Daily-overview.svelte";
 	export let data;
 </script>
 
-<CurrentTemp {data}/>
+<DailyOverview {data}/>
