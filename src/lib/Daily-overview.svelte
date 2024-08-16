@@ -5,6 +5,7 @@
 
 	let temp = data.props.data.hourly[0].temp;
 	let feelsLike = data.props.data.hourly[0].feels_like;
+
 	let description = data.props.data.hourly[0].weather[0].description;
 	let icon = data.props.data.hourly[0].weather[0].icon;
 
@@ -19,7 +20,7 @@
 		<p>{description}</p>
 		<img id="icon" src="https://openweathermap.org/img/wn/{icon}@2x.png" alt="" />
 		<div id="minMax">
-      <p id="max">&#8593 <b>{max} &#8451</b></p>
+			<p id="max">&#8593 <b>{max} &#8451</b></p>
 			<p id="min">&#8595 {min} &#8451</p>
 		</div>
 	{/if}
@@ -52,13 +53,14 @@
 		margin-right: auto;
 	}
 	#minMax {
-    columns: 2;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
+		columns: 2;
+		display: flex;
+		justify-content: center;
+		width: 80%;
+		margin: 0 auto;
 	}
-  #min, #max {
-    margin: 1em;
-  }
+	#min,
+	#max {
+		margin: 1em;
+	}
 </style>
