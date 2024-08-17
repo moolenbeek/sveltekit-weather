@@ -3,7 +3,7 @@
 	export let data;
 	console.log(data);
 
-	let description = data.props.data.hourly[0].weather[0].description;
+	let description = data.props.data.hourly[0].weather[0].main;
 	let icon = data.props.data.hourly[0].weather[0].icon;
 	let min = data.props.data.daily[0].temp.min;
 	let max = data.props.data.daily[0].temp.max;
