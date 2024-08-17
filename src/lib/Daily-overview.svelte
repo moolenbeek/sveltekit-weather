@@ -3,12 +3,8 @@
 	export let data;
 	console.log(data);
 
-	let temp = data.props.data.hourly[0].temp;
-	let feelsLike = data.props.data.hourly[0].feels_like;
-
 	let description = data.props.data.hourly[0].weather[0].description;
 	let icon = data.props.data.hourly[0].weather[0].icon;
-
 	let min = data.props.data.daily[0].temp.min;
 	let max = data.props.data.daily[0].temp.max;
 </script>
