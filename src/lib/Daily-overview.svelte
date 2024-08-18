@@ -1,6 +1,5 @@
 <script lang="ts">
-	/** @type {import('./$types').PageData} */
-	export let data;
+	export let data: { props: any };
 	console.log(data);
 
 	let description = data.props.data.hourly[0].weather[0].main;
@@ -10,7 +9,7 @@
 </script>
 
 <div id="container">
-	{#if data !== ""}
+	{#if data}
 		<p>Today</p>
 		<h1>Ottawa, ON</h1>
 		<p>{description}</p>
